@@ -77,7 +77,7 @@ console.log("!cond1",!cond1);
 
 //Conditional Statements
 //if Condition
-let age = 23;
+var age = 23;
 if (age >= 18) {
   console.log("You Can Vote");
 }
@@ -85,13 +85,54 @@ if (age < 18) {
   console.log("Sorry You Cannot Vote");
 }
 
-let mode = "dark-mode";
-let color;
+//if-else condition
+var mode = "dark-mode";
+var color;
 if (mode === "dark-mode") {
   color = "dark";
-}
-if (mode === "light-mode") {
+} else {
   color = "white";
 }
 console.log(color);
 
+let number = 25
+if (number%2 === 0) {
+  console.log(number,"is Even");
+} else {
+  console.log(number,"is Odd");
+}
+
+//else-if condition
+var mode = "pink";
+var color;
+if (mode === "dark") {
+  color = "dark";
+}
+else if (mode === "blue") {
+  color = "blue";
+}
+else if (mode === "pink") {
+  color = "pink";
+} else {
+  color = "white";
+}
+console.log(color);
+
+//Ternary Operators 
+var age = 10;
+var output =age > 18 ? "adult":"not adult";
+console.log(output);
+
+//switch operator
+var fruit = "Papayas";
+switch (fruit) {
+  case "Oranges":
+    console.log("Oranges are $0.59 pound.");
+    break;
+    case "Mangoes":
+    case "Papayas":
+      console.log("Mangoes and Papayas are $2.79 pound.")
+      break;
+    default:
+      console.log("Sorry, we are out of",fruit);
+}
