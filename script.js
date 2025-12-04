@@ -136,3 +136,75 @@ switch (fruit) {
     default:
       console.log("Sorry, we are out of",fruit);
 }
+
+//for loop
+for(let count=1; count<=5; count++) {
+  console.log("Hello World");
+} 
+
+//Calculate sum from 1 to 100
+let sum = 0;
+for (let i=1; i<=100; i++) {
+  sum =sum + i;
+}
+console.log("The sum is:",sum);
+
+//while loop
+let c = 1;
+let s = 0;
+while (c<=100) {
+  s = s+c;
+  c++;
+}
+console.log("Sum is:",s);
+
+//do-while loop
+let a = 1;
+do {
+  console.log("a = ", a);
+  a++
+} while (a<=5);
+
+//for-of loop
+let word = "HelloWorld";
+let len = 0;
+for (let char of word) {  //iterator -> characters
+  console.log(char);
+  len++;
+}
+console.log("Length of word is:",len);
+
+//for-in loop
+let student = {
+  name: "Rohan",
+  age: 20,
+  cgpa: 9,
+  isPass: true
+};
+
+for (let key in student) {
+  console.log("keys =",key, "value =",student[key]);
+}
+
+//Strings
+let str = "Hello World";
+console.log("Entered string is:",str);
+let length = str.length;
+console.log("Length of string is:",len);
+let letter_2 = str[1];
+console.log("2nd letter in the string is:",letter_2);
+
+//Template Literals
+let specialString = `This is a template literal`;
+console.log(specialString);
+
+let obj = {
+  item: "pen",
+  price: "30 rupees"
+};
+console.log("The cost of",obj.item, "is:",obj.price); //The Normal Way
+console.log(`The cost of ${obj.item} is: ${obj.price}`); //Template Literal
+
+//Escape Characters
+console.log("Hello\nWorld");
+console.log("Hello\tWorld");
